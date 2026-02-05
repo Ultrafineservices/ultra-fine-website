@@ -57,12 +57,52 @@ footer{
   text-align:center;
   padding:25px;
 }
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+  background:#cce7f3;
+}
+
+.navbar ul{
+  list-style:none;
+  display:flex;
+  gap:25px;
+  margin:0;
+  padding:0;
+}
+
+.navbar a{
+  text-decoration:none;
+  color:#1f3c4f;
+  font-weight:600;
+}
+
+.navbar a:hover{
+  color:#4fb3a2;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  color:#1f3c4f;
+}
 
 </style>
 
 </head>
 
 <body>
+<nav class="navbar">
+  <div class="logo">Ultra Fine Supply & Services</div>
+  <ul>
+    <li><a href="index.html">About</a></li>
+    <li><a href="services.html">Our Services</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+</nav>
 
 <header>
 <h1>Ultra Fine Services</h1>
