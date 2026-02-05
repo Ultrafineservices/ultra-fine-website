@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services | Ultra Fine Services</title>
+
+<style>
+body{
+  font-family: Arial, sans-serif;
+  margin:0;
+  background:#eef6ff;
+  color:#2b2b2b;
+}
+
+header{
+  background:#cfe4ff;
+  padding:30px;
+  text-align:center;
+}
+
+nav a{
+  margin:0 15px;
+  text-decoration:none;
+  color:#003b2f;
+  font-weight:bold;
+}
+
+section{
+  padding:60px 20px;
+  max-width:1000px;
+  margin:auto;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 4px 8px rgba(0,0,0,.1);
+  text-align:center;
+}
+
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+button{
+  background:#7bdcb5;
+  border:none;
+  padding:12px 20px;
+  border-radius:6px;
+  font-size:16px;
+}
+
+footer{
+  background:#cfe4ff;
+  padding:20px;
+  text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Ultra Fine Services</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">Services & Contact</a>
+</nav>
+</header>
+
+<section>
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+<h3>Food & Milk Distribution</h3>
+<p>Nutritious meals and dairy delivered on time.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1543353071-873f17a7a088">
+<h3>CACFP Food Program Assistance</h3>
+<p>Claims, documentation, and compliance support.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604908177522-050b9f38d94a">
+<h3>Menu Planning</h3>
+<p>USDA & CACFP compliant menus.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Contact Us</h2>
+
+<p>📞 281-829-8085</p>
+<p>📧 ultrafineservices@gmail.com</p>
+
+<form action="https://formspree.io/f/abcdwxyz" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required
+style="width:100%;padding:12px;margin-bottom:10px;">
+
+<input type="email" name="email" placeholder="Your Email" required
+style="width:100%;padding:12px;margin-bottom:10px;">
+
+<textarea name="message" placeholder="Your Message" rows="5" required
+style="width:100%;padding:12px;margin-bottom:10px;"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+</section>
+
+<footer>
+<p>© 2026 Ultra Fine Services</p>
+</footer>
+
+</body>
+</html>
