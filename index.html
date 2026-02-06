@@ -88,6 +88,36 @@ footer{
   font-weight:bold;
   color:#1f3c4f;
 }
+.dropdown{
+  position:relative;
+}
+
+.dropdown-menu{
+  display:none;
+  position:absolute;
+  background:#ffffff;
+  list-style:none;
+  padding:10px 0;
+  min-width:220px;
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dropdown-menu li{
+  padding:8px 20px;
+}
+
+.dropdown-menu li a{
+  color:#1f3c4f;
+  display:block;
+}
+
+.dropdown-menu li a:hover{
+  background:#e6f4f9;
+}
+
+.dropdown:hover .dropdown-menu{
+  display:block;
+}
 
 </style>
 
@@ -98,7 +128,16 @@ footer{
   <div class="logo">Ultra Fine Supply & Services</div>
   <ul>
     <li><a href="about.html">About</a></li>
-    <li><a href="services.html">Our Services</a></li>
+    <li class="dropdown">
+  <a href="services.html">Our Services ▾</a>
+  <ul class="dropdown-menu">
+    <li><a href="services.html#food">Food & Milk Distribution</a></li>
+    <li><a href="services.html#cacfp">CACFP Assistance</a></li>
+    <li><a href="services.html#menu">Menu Planning</a></li>
+    <li><a href="services.html#nutrition">Nutritional Support</a></li>
+  </ul>
+</li>
+
     <li><a href="#how">How It Works</a></li>
     <li><a href="#contact">Contact Us</a></li>
   </ul>
