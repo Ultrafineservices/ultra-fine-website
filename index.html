@@ -225,17 +225,7 @@ so you can focus on caring for children.
 
 </div>
 </section>
-<section id="food">
-  <h2>Food Purchases</h2>
-  <p>
-    We specialise in the supply of groceries, fresh fruit, milk,
-    and cleaning essentials.
-  </p>
-  <p>
-    Our service focuses on timely delivery of nutritious meals,
-    healthy snacks, and quality dairy products.
-  </p>
-</section>
+
 
 <section id="cacfp">
   <h2>CACFP Assistance</h2>
@@ -361,7 +351,30 @@ function openAboutModal() {
 function closeAboutModal() {
   document.getElementById("aboutModal").style.display = "none";
 }
+
+function openFoodModal() {
+  document.getElementById("foodModal").style.display = "block";
+}
+
+function closeFoodModal() {
+  document.getElementById("foodModal").style.display = "none";
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+  const about = document.getElementById("aboutModal");
+  const food = document.getElementById("foodModal");
+
+  if (event.target === about) {
+    closeAboutModal();
+  }
+
+  if (event.target === food) {
+    closeFoodModal();
+  }
+};
 </script>
+
 
 </body>
 </html>
