@@ -299,13 +299,22 @@ style="width:100%;padding:12px;margin-bottom:10px;"></textarea>
   </div>
 </div>
 <script>
-function openFoodModal() {
-  document.getElementById("foodModal").style.display = "block";
+const aboutModal = document.getElementById("aboutModal");
+
+function openAboutModal() {
+  aboutModal.style.display = "block";
 }
 
-function closeFoodModal() {
-  document.getElementById("foodModal").style.display = "none";
+function closeAboutModal() {
+  aboutModal.style.display = "none";
 }
+
+// Close modal when clicking outside the box
+window.onclick = function(event) {
+  if (event.target === aboutModal) {
+    closeAboutModal();
+  }
+};
 </script>
 <!-- About Modal -->
 <div id="aboutModal" class="modal">
