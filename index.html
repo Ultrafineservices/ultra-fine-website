@@ -164,7 +164,7 @@ footer{
 
   <ul>
     <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
+    <li><a href="javascript:void(0)" onclick="openAboutModal()">About</a></li>
 
     <li class="dropdown">
       <a href="#services">Our Services ▾</a>
@@ -188,38 +188,6 @@ footer{
 <p>Nourishing Young Minds with Quality Meals & Expert Support</p>
 <p>📞 281-829-8085 | 📧 ultrafineservices@gmail.com</p>
 </header>
-<section id="about">
-  <h2>About Ultra Fine Supply & Services</h2>
-
-  <p>
-    At Ultra Fine Supply & Services, we specialize in providing dependable
-    food distribution and nutrition program support for daycare and
-    childcare facilities.
-  </p>
-
-  <p>
-    Our goal is to simplify meal operations while ensuring children receive
-    healthy, balanced, and high-quality meals every day.
-  </p>
-
-  <p>
-    We partner with daycare centers to deliver nutritious food and milk,
-    assist with CACFP food program documentation, and provide menu planning
-    that meets USDA and state guidelines.
-  </p>
-
-  <p>
-    Serving the Greater Houston area, we are committed to building long-term
-    relationships through personalized service, consistent communication,
-    and dependable support.
-  </p>
-
-  <p>
-    <strong>
-      We provide food, cleaning supplies, and maintenance services.
-    </strong>
-  </p>
-</section>
 
 <section id="about">
 <h2>Reliable Food Solutions for Daycare Facilities</h2>
@@ -337,6 +305,52 @@ function openFoodModal() {
 
 function closeFoodModal() {
   document.getElementById("foodModal").style.display = "none";
+}
+</script>
+<!-- About Modal -->
+<div id="aboutModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeAboutModal()">×</span>
+
+    <h2>About Ultra Fine Supply & Services</h2>
+
+    <p>
+      At Ultra Fine Supply & Services, we specialize in providing dependable
+      food distribution and nutrition program support for daycare and
+      childcare facilities.
+    </p>
+
+    <p>
+      Our goal is to simplify meal operations while ensuring children receive
+      healthy, balanced, and high-quality meals every day.
+    </p>
+
+    <p>
+      We partner with daycare centers to deliver nutritious food and milk,
+      assist with CACFP food program documentation, and provide menu planning
+      that meets USDA and state guidelines.
+    </p>
+
+    <p>
+      Serving the Greater Houston area, we are committed to building long-term
+      relationships through personalized service, consistent communication,
+      and dependable support.
+    </p>
+
+    <p>
+      <strong>
+        We provide food, cleaning supplies, and maintenance services.
+      </strong>
+    </p>
+  </div>
+</div>
+<script>
+function openAboutModal() {
+  document.getElementById("aboutModal").style.display = "block";
+}
+
+function closeAboutModal() {
+  document.getElementById("aboutModal").style.display = "none";
 }
 </script>
 
