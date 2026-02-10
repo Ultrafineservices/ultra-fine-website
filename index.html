@@ -187,7 +187,7 @@ footer{
     </li>
 
     <li><a href="#how">How It Works</a></li>
-    <li><a href="#contact">Contact Us</a></li>
+    <li><a href="javascript:void(0)" onclick="openContactModal()">Contact Us</a></li>
   </ul>
 </nav>
 
@@ -389,6 +389,44 @@ window.onclick = function(event) {
 };
 </script>
 
+<!-- Contact Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeContactModal()">×</span>
+
+    <h2>Contact Ultra Fine Services</h2>
+
+    <p><strong>📞 Call Us</strong><br>
+      281-829-8085
+    </p>
+
+    <p><strong>📍 Write Us</strong><br>
+      225 Matlage Way<br>
+      Sugar Land, Texas 77478-1311
+    </p>
+
+    <p><strong>📧 Email Us</strong><br>
+      ultrafineservices@gmail.com
+    </p>
+  </div>
+</div>
+<script>
+function openContactModal() {
+  document.getElementById("contactModal").style.display = "block";
+}
+
+function closeContactModal() {
+  document.getElementById("contactModal").style.display = "none";
+}
+
+// Close modal when clicking outside the box
+window.addEventListener("click", function(event) {
+  const modal = document.getElementById("contactModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+</script>
 
 </body>
 </html>
