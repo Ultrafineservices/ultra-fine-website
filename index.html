@@ -162,6 +162,74 @@ footer{
 .card h3 {
   margin-top: 10px;
 }
+/* ---------- MOBILE RESPONSIVE ---------- */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .navbar ul li {
+    width: 100%;
+  }
+
+  /* Header text */
+  header h1 {
+    font-size: 26px;
+  }
+
+  header p {
+    font-size: 15px;
+  }
+
+  /* Sections */
+  section {
+    padding: 40px 15px;
+  }
+
+  section h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  /* Service cards */
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  /* Buttons */
+  button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  /* Forms */
+  input, textarea {
+    font-size: 16px;
+  }
+
+  /* Modals */
+  .modal-content {
+    width: 90%;
+    margin: 20% auto;
+    padding: 20px;
+  }
+
+}
 
 </style>
 
