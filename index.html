@@ -170,46 +170,50 @@ footer{
 /* ---------- MOBILE RESPONSIVE ---------- */
 @media (max-width: 768px) {
 
-  /* Navbar */
-  @media (max-width: 768px) {
-
+  /* Navbar layout */
   .navbar {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 12px 16px;
   }
 
+  /* Logo */
   .logo {
     font-size: 18px;
-    white-space: nowrap;
+    margin-bottom: 10px;
+    text-align: center;
+    white-space: normal;
   }
 
+  /* Menu under logo */
   .navbar ul {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar ul li {
+    width: auto;
   }
 
   .navbar ul li a {
     font-size: 14px;
-  }
-
-}
-
-
-  .navbar ul li {
-    width: 100%;
+    padding: 6px 8px;
   }
 
   /* Header text */
   header h1 {
     font-size: 26px;
+    text-align: center;
   }
 
   header p {
     font-size: 15px;
+    text-align: center;
   }
 
   /* Sections */
@@ -238,7 +242,8 @@ footer{
   }
 
   /* Forms */
-  input, textarea {
+  input,
+  textarea {
     font-size: 16px;
   }
 
@@ -248,7 +253,6 @@ footer{
     margin: 20% auto;
     padding: 20px;
   }
-
 }
 
 </style>
