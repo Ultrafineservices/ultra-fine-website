@@ -339,23 +339,27 @@ so you can focus on caring for children.
 <section id="contact">
 <h2>Contact Us</h2>
 
-https://formspree.io/f/mvzqevnn
-  
-<input type="hidden" name="_next" value="https://ultrafineservices.github.io/ultra-fine-website/thankyou.html">
+<form action="https://formspree.io/f/mvzqevnn" method="POST">
 
-<input type="text" name="name" placeholder="Your Name" required
-style="width:100%;padding:12px;margin-bottom:10px;">
+  <input type="hidden" name="_next"
+  value="https://ultrafineservices.github.io/ultra-fine-website/thankyou.html">
 
-<input type="email" name="email" placeholder="Your Email" required
-style="width:100%;padding:12px;margin-bottom:10px;">
+  <input type="hidden" name="_subject"
+  value="New Contact Message from Website">
 
-<textarea name="message" placeholder="Your Message" rows="5" required
-style="width:100%;padding:12px;margin-bottom:10px;"></textarea>
-<input type="hidden" name="_subject" value="New Contact Message from Website">
+  <input type="text" name="name" placeholder="Your Name" required
+  style="width:100%;padding:12px;margin-bottom:10px;">
 
-<button type="submit">Send Message</button>
+  <input type="email" name="email" placeholder="Your Email" required
+  style="width:100%;padding:12px;margin-bottom:10px;">
+
+  <textarea name="message" placeholder="Your Message" rows="5" required
+  style="width:100%;padding:12px;margin-bottom:10px;"></textarea>
+
+  <button type="submit">Send Message</button>
 
 </form>
+
 </section>
 
 <footer>
